@@ -17,7 +17,7 @@ exports.randomTemplate = (seed) => {
 
   const headerFont = faker.helpers.randomize(fonts.header);
   const accentColor = [rng.intBetween(0, 255), rng.intBetween(0, 255), rng.intBetween(0, 255)]
-      .map(c => c.toString(16))
+      .map(c => c.toString(16).padStart(2, "0"))
       .join('');
 
   const design = {

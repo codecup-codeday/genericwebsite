@@ -6,7 +6,7 @@
     "tinycolor2": "^1.4.1"
   },
   "name": "@srnd/codecup-genericwebsite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates generic looking websites",
   "main": "src/index.js",
   "repository": "https://github.com/srnd/codecup-genericwebsite",
