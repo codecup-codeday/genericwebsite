@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ company.name }}{{#if title }}{{ design.titleSep }}{{ title }}{{/if }}</title>
+    <link rel="stylesheet" href="{{ design.fonts.googleImport }}" />
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: {{ design.fonts.body }};
+      }
+      {{# if design.fullWidth}}.wrap{{else }}.wrap-content{{/if }} {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .hero {
+        background-image: url("{{ design.image }}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        padding: 3rem;
+        text-align: {{ design.heroAlign }};
+        height: {{ design.heroSize }}rem;
+      }
+      .hero h1, .hero h2 {
+        display: inline-block;
+        background-color: #{{ design.colors.accentNegative }};
+        color: #{{ design.colors.accentColor }};
+      }
+      h1, h2, h3 {
+        font-family: {{ design.fonts.header }};
+      }
+      a.btn, input[type="submit"] {
+        padding: 1rem;
+        border: none;
+        background-color: #{{ design.colors.accentColor }};
+        color: #{{ design.colors.accentNegative }};
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <h1>{{ company.name }}</h1><br />
+        <h2>{{ company.catchPhrase }}</h2>
+      </div>
+      <div class="wrap-content">
+        {{{ content }}}
+      </div>
+    </div>
+  </body>
+</html>

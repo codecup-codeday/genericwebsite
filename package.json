@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "faker": "^4.1.0",
+    "handlebars": "^4.7.3",
+    "random-seed": "^0.3.0",
+    "tinycolor2": "^1.4.1"
+  },
+  "name": "codecup-genericwebsite",
+  "version": "1.0.0",
+  "description": "Generates generic looking websites",
+  "main": "src/index.js",
+  "repository": "https://github.com/srnd/codecup-genericwebsite",
+  "author": "Tyler Menezes <tylermenezes@srnd.org>",
+  "license": "Artistic-2.0",
+  "private": false
+}
