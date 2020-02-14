@@ -5,7 +5,7 @@
     "random-seed": "^0.3.0",
     "tinycolor2": "^1.4.1"
   },
-  "name": "codecup-genericwebsite",
+  "name": "@srnd/codecup-genericwebsite",
   "version": "1.0.0",
   "description": "Generates generic looking websites",
   "main": "src/index.js",
